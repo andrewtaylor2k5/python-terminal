@@ -76,7 +76,6 @@ def helpmod():
     print("dev debug           -Starts the Debugger")
     print("dev quit            -Quits the Emulator")
     print("dev errors          -Displays a list of error codes")
-    print("dev lock            -Locks the 'dev' interpreter")
     print()
     print()
     terminal()
@@ -98,8 +97,6 @@ def devinterpreter():
         exit()
     elif devcommand==("dev errors"):
         deverrors()
-    elif devcommand==("dev lock"):
-        lock()
     else:
         print("ERROR CODE: 000x02")
         devinterpreter()
